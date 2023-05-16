@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Dosis:wght@300&family=IBM+Plex+Mono:wght@500&family=Lobster+Two&family=Righteous&display=swap"
+        rel="stylesheet">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <h1>Dashboard</h1>
+            <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M220 876h150V626h220v250h150V486L480 291 220 486v390Zm-60 60V456l320-240 320 240v480H530V686H430v250H160Zm320-353Z" fill="white" /></svg>Home</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M222 801q63-44 125-67.5T480 710q71 0 133.5 23.5T739 801q44-54 62.5-109T820 576q0-145-97.5-242.5T480 236q-145 0-242.5 97.5T140 576q0 61 19 116t63 109Zm257.814-195Q422 606 382.5 566.314q-39.5-39.686-39.5-97.5t39.686-97.314q39.686-39.5 97.5-39.5t97.314 39.686q39.5 39.686 39.5 97.5T577.314 566.5q-39.686 39.5-97.5 39.5Zm.654 370Q398 976 325 944.5q-73-31.5-127.5-86t-86-127.266Q80 658.468 80 575.734T111.5 420.5q31.5-72.5 86-127t127.266-86q72.766-31.5 155.5-31.5T635.5 207.5q72.5 31.5 127 86t86 127.032q31.5 72.532 31.5 155T848.5 731q-31.5 73-86 127.5t-127.032 86q-72.532 31.5-155 31.5ZM480 916q55 0 107.5-16T691 844q-51-36-104-55t-107-19q-54 0-107 19t-104 55q51 40 103.5 56T480 916Zm0-370q34 0 55.5-21.5T557 469q0-34-21.5-55.5T480 392q-34 0-55.5 21.5T403 469q0 34 21.5 55.5T480 546Zm0-77Zm0 374Z"    fill="white" /></svg>Profile</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M240 657h313v-60H240v60Zm0-130h480v-60H240v60Zm0-130h480v-60H240v60ZM80 976V236q0-23 18-41.5t42-18.5h680q23 0 41.5 18.5T880 236v520q0 23-18.5 41.5T820 816H240L80 976Zm60-145 75-75h605V236H140v595Zm0-595v595-595Z" fill="white" /></svg>Messages</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M477 936q-149 0-253-105.5T120 575h60q0 125 86 213t211 88q127 0 215-89t88-216q0-124-89-209.5T477 276q-68 0-127.5 31T246 389h105v60H142V241h60v106q52-61 123.5-96T477 216q75 0 141 28t115.5 76.5Q783 369 811.5 434T840 574q0 75-28.5 141t-78 115Q684 879 618 907.5T477 936Zm128-197L451 587V373h60v189l137 134-43 43Z" fill="white" /></svg>History</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="m434 801 229-229-39-39-190 190-103-103-39 39 142 142ZM220 976q-24 0-42-18t-18-42V236q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm331-554V236H220v680h520V422H551ZM220 236v186-186 680-680Z" fill="white" /></svg>Tasks</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="m388 976-20-126q-19-7-40-19t-37-25l-118 54-93-164 108-79q-2-9-2.5-20.5T185 576q0-9 .5-20.5T188 535L80 456l93-164 118 54q16-13 37-25t40-18l20-127h184l20 126q19 7 40.5 18.5T669 346l118-54 93 164-108 77q2 10 2.5 21.5t.5 21.5q0 10-.5 21t-2.5 21l108 78-93 164-118-54q-16 13-36.5 25.5T592 850l-20 126H388Zm92-270q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-60q-29 0-49.5-20.5T410 576q0-29 20.5-49.5T480 506q29 0 49.5 20.5T550 576q0 29-20.5 49.5T480 646Zm0-70Zm-44 340h88l14-112q33-8 62.5-25t53.5-41l106 46 40-72-94-69q4-17 6.5-33.5T715 576q0-17-2-33.5t-7-33.5l94-69-40-72-106 46q-23-26-52-43.5T538 348l-14-112h-88l-14 112q-34 7-63.5 24T306 414l-106-46-40 72 94 69q-4 17-6.5 33.5T245 576q0 17 2.5 33.5T254 643l-94 69 40 72 106-46q24 24 53.5 41t62.5 25l14 112Z" fill="white" /></svg>Communities</li>
+
+                <div>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="m388 976-20-126q-19-7-40-19t-37-25l-118 54-93-164 108-79q-2-9-2.5-20.5T185 576q0-9 .5-20.5T188 535L80 456l93-164 118 54q16-13 37-25t40-18l20-127h184l20 126q19 7 40.5 18.5T669 346l118-54 93 164-108 77q2 10 2.5 21.5t.5 21.5q0 10-.5 21t-2.5 21l108 78-93 164-118-54q-16 13-36.5 25.5T592 850l-20 126H388Zm92-270q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-60q-29 0-49.5-20.5T410 576q0-29 20.5-49.5T480 506q29 0 49.5 20.5T550 576q0 29-20.5 49.5T480 646Zm0-70Zm-44 340h88l14-112q33-8 62.5-25t53.5-41l106 46 40-72-94-69q4-17 6.5-33.5T715 576q0-17-2-33.5t-7-33.5l94-69-40-72-106 46q-23-26-52-43.5T538 348l-14-112h-88l-14 112q-34 7-63.5 24T306 414l-106-46-40 72 94 69q-4 17-6.5 33.5T245 576q0 17 2.5 33.5T254 643l-94 69 40 72 106-46q24 24 53.5 41t62.5 25l14 112Z" fill="white" /></svg>Settings</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M440 936v-60h340V572q0-58-25-111.5T688 366q-42-41-96-65.5T480 276q-58 0-112 24.5T272 366q-42 41-67 94.5T180 572v244h-20q-33 0-56.5-23.5T80 736v-80q0-23 11-40.5t29-28.5l3-53q9-73 41.5-132t81-100q48.5-41 109-63.5T480 216q66 0 126.5 22.5t108.5 64q48 41.5 80.5 100T837 533l3 52q18 9 29 26.5t11 38.5v92q0 22-11 39t-29 26v69q0 24.75-17.625 42.375T780 936H440Zm-80-290q-12 0-21-9t-9-21.5q0-12.5 9-21t21.5-8.5q12.5 0 21 8.625T390 616q0 12-8.625 21T360 646Zm240 0q-12 0-21-9t-9-21.5q0-12.5 9-21t21.5-8.5q12.5 0 21 8.625T630 616q0 12-8.625 21T600 646Zm-359-52q-4-59 16.5-107t55-81.5Q347 372 392 354t90-18q91 0 153 57.5T711 537q-94-1-165.5-50.5T435 358q-16 81-67.5 143.5T241 594Z" fill="white" /></svg>Suport</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"> <path d="m436 709 228-228-42-41-183 183-101-101-44 44 142 143Zm44 266q-140-35-230-162.5T160 533V295l320-120 320 120v238q0 152-90 279.5T480 975Zm0-62q115-38 187.5-143.5T740 533V337l-260-98-260 98v196q0 131 72.5 236.5T480 913Zm0-337Z" fill="white" /></svg>Privacy</li>
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="contents">
+        <header>
+            <ul class="top-header">
+                <div id="search-bar">
+                    <label for="search"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30"><path d="M796 935 533 672q-30 26-69.959 40.5T378 727q-108.162 0-183.081-75Q120 577 120 471t75-181q75-75 181.5-75t181 75Q632 365 632 471.15 632 514 618 554q-14 40-42 75l264 262-44 44ZM377 667q81.25 0 138.125-57.5T572 471q0-81-56.875-138.5T377 275q-82.083 0-139.542 57.5Q180 390 180 471t57.458 138.5Q294.917 667 377 667Z"   fill="blue" /></svg></label>
+                    <input type="search" id="search" placeholder="search...">
+                </div>
+                <div>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30"><path d="M124 489q0-81 34-153.5T255 212l41 45q-53 43-82.5 103.5T184 489h-60Zm653 0q0-68-28-128.5T668 257l41-45q62 52 95 124t33 153h-60ZM160 856v-60h84V490q0-84 49.5-149.5T424 258v-29q0-23 16.5-38t39.5-15q23 0 39.5 15t16.5 38v29q81 17 131 82.5T717 490v306h83v60H160Zm320-295Zm0 415q-32 0-56-23.5T400 896h160q0 33-23.5 56.5T480 976ZM304 796h353V490q0-74-51-126t-125-52q-74 0-125.5 52T304 490v306Z" fill="blue" /></svg></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30"><path d="M222 801q63-44 125-67.5T480 710q71 0 133.5 23.5T739 801q44-54 62.5-109T820 576q0-145-97.5-242.5T480 236q-145 0-242.5 97.5T140 576q0 61 19 116t63 109Zm257.814-195Q422 606 382.5 566.314q-39.5-39.686-39.5-97.5t39.686-97.314q39.686-39.5 97.5-39.5t97.314 39.686q39.5 39.686 39.5 97.5T577.314 566.5q-39.686 39.5-97.5 39.5Zm.654 370Q398 976 325 944.5q-73-31.5-127.5-86t-86-127.266Q80 658.468 80 575.734T111.5 420.5q31.5-72.5 86-127t127.266-86q72.766-31.5 155.5-31.5T635.5 207.5q72.5 31.5 127 86t86 127.032q31.5 72.532 31.5 155T848.5 731q-31.5 73-86 127.5t-127.032 86q-72.532 31.5-155 31.5ZM480 916q55 0 107.5-16T691 844q-51-36-104-55t-107-19q-54 0-107 19t-104 55q51 40 103.5 56T480 916Zm0-370q34 0 55.5-21.5T557 469q0-34-21.5-55.5T480 392q-34 0-55.5 21.5T403 469q0 34 21.5 55.5T480 546Zm0-77Zm0 374Z" fill="blue" /></svg> Gideon Adonteng</li>
+                </div>
+
+            </ul>
+            <ul class="lower-header">
+                <div>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 96 960 960" width="35"><path d="M222 801q63-44 125-67.5T480 710q71 0 133.5 23.5T739 801q44-54 62.5-109T820 576q0-145-97.5-242.5T480 236q-145 0-242.5 97.5T140 576q0 61 19 116t63 109Zm257.814-195Q422 606 382.5 566.314q-39.5-39.686-39.5-97.5t39.686-97.314q39.686-39.5 97.5-39.5t97.314 39.686q39.5 39.686 39.5 97.5T577.314 566.5q-39.686 39.5-97.5 39.5Zm.654 370Q398 976 325 944.5q-73-31.5-127.5-86t-86-127.266Q80 658.468 80 575.734T111.5 420.5q31.5-72.5 86-127t127.266-86q72.766-31.5 155.5-31.5T635.5 207.5q72.5 31.5 127 86t86 127.032q31.5 72.532 31.5 155T848.5 731q-31.5 73-86 127.5t-127.032 86q-72.532 31.5-155 31.5ZM480 916q55 0 107.5-16T691 844q-51-36-104-55t-107-19q-54 0-107 19t-104 55q51 40 103.5 56T480 916Zm0-370q34 0 55.5-21.5T557 469q0-34-21.5-55.5T480 392q-34 0-55.5 21.5T403 469q0 34 21.5 55.5T480 546Zm0-77Zm0 374Z" fill="blue" /></svg> Welcome, Gideon(@Gidzet)</div>
+
+                </div>
+                <div>
+                    <button type="button">New</button>
+                    <button type="button">Upload</button>
+                    <button type="button">Share</button>
+                </div>
+
+            </ul>
+        </header>
+
+        <div class="projects">
+
+            <h1>Projects</h1>
+            <div class="proj-body">
+                <div>
+                    <h1>Lorem1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem5</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem6</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem7</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem8</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem9</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem10</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem11</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem12</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem13</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem14</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem
+                        facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem15</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem
+                        facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+                <div>
+                    <h1>Lorem16</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error aspernatur, saepe
+                        iure amet quasi rem
+                        facilis incidunt eveniet aut commodi dolores, exercitationem animi. </p>
+                </div>
+            </div>
+
+            <div class="content">
+
+                <div class="announcements">
+                    <h1>Announcements</h1>
+                    <div>
+                        <div>
+                            <h1>Site Management</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptates delectus
+                                distinctio deserunt saepe molestiae! Dolore tenetur adipisci dignissimos fugit quos
+                                voluptatibus, officia cum porro ullam maxime. Inventore, quidem enim!</p>
+                        </div>
+                        <hr>
+                        <br>
+                        <div>
+                            <h1>Community Share Day</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque voluptates,
+                                sit molestiae odit repellendus necessitatibus voluptatibus neque! Commodi ducimus
+                                dolorem eum alias sint beatae reiciendis exercitationem ad fugiat earum!</p>
+                        </div>
+                        <hr>
+                        <br>
+                        <div>
+                            <h1>Updated Privacy Policy</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque voluptates,
+                                sit molestiae odit repellendus necessitatibus voluptatibus neque! Commodi ducimus
+                                dolorem eum alias sint beatae reiciendis exercitationem ad fugiat earum!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trending">
+                    <h1>Trending</h1>
+
+                    <ul>
+                        <li>Richard</li>
+                        <li>Kwame</li>
+                        <li>Robert</li>
+                        <li>Musa</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
