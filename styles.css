@@ -257,3 +257,95 @@ body > header {
 .lower-header button:hover {
     background: #27447a;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-family: 'Baskervville', serif;
+    background-color: #eceef5;
+
+
+}
+
+.projects > h1 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.proj-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1.5rem;
+
+}
+
+.proj-body > div {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 10px solid #db5151;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    cursor: pointer;
+    transition: box-shadow .5s ease-in-out;
+
+}
+
+.proj-body > div:hover {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, .20);
+}
+
+.content {
+    grid-row: 1 / 5;
+    grid-column: 2 / 3;
+    margin-right: 3rem;
+
+}
+
+.announcements {
+    margin-top: 2rem;
+    min-width: 30%;
+    max-width: 90%;
+    cursor: default;
+    transition: box-shadow .5s ease-in-out;
+}
+
+.announcements:hover {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, .20);
+}
+
+.announcements > div {
+    background-color: #fdfdfd;
+    padding: 1.2rem;
+    border-radius: 8px;
+}
+
+.trending {
+    margin-top: 2rem;
+    cursor: default;
+}
+
+
+.trending > ul {
+    min-width: 30%;
+    max-width: 60%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 3rem;
+    border-radius: 8px;
+
+
+}
+
+.trending ul > li {
+    margin-top: 2rem;
+}
+
+.trending ul > li:last-child {
+    margin-bottom: 2rem;
+}
