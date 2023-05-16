@@ -349,3 +349,36 @@ body > header {
 .trending ul > li:last-child {
     margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 1202px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    #search {
+        width: 60%;
+        height: 40%;
+        border-radius: 15px;
+    }
+
+    .contents {
+        grid-template-rows: 1fr 5fr;
+
+    }
+
+    /* .projects {
+      margin-left: 2rem;
+    } */
+
+
+    .lower-header h1 {
+        margin-left: 3rem;
+    }
+
+
+}
